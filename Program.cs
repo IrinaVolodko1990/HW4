@@ -1,4 +1,4 @@
-﻿//Задача 25: Напишите цикл, который принимает на вход два числа (A и B) 
+﻿﻿//Задача 25: Напишите цикл, который принимает на вход два числа (A и B) 
 //и возводит число A в натуральную степень B.
 //3, 5 -> 243 (3⁵)
 //2, 4 -> 16
@@ -18,6 +18,16 @@ Console.WriteLine($"Number {number} to the power of {power} is {result}");
 //452 -> 11
 //82 -> 10
 //9012 -> 12
+
+Console.WriteLine("Input some number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int sum = 0;
+while (number > 0)
+{
+    sum += number % 10;
+    number /= 10;
+}
+Console.WriteLine($"Sum of all digits of a number is {sum}");
 
 //Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 //1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
